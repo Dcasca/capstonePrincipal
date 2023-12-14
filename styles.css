@@ -1,31 +1,19 @@
-/*
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 50px;
-}
-
-
-#imagePreview {
-    max-width: 100%;
-    display: block;
-    margin: auto;
-}
-
-*/
 #imageUpload {
     margin: 20px;
 }
+
 #predictionResult {
     margin-top: 20px;
     font-size: 20px;
     color: green;
 }
+
 #predictButton {
     margin: 10px;
     padding: 10px 20px;
     font-size: 16px;
 }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -34,16 +22,32 @@ body {
 }
 
 header {
-    background-color: #d11f3f;
+    background-color: #e60000;
     color: white;
-    text-align: center;
-    padding: 10px 0;
+    padding: 10px;
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos del header */
+}
+
+.header-content {
+    display: flex;
+    align-items: center; /* Centra verticalmente el logo y el título dentro de este contenedor */
 }
 
 #logo {
-    width: 200px;
+    width: 200px; /* Ajusta esto según el tamaño de tu logo */
     height: auto;
+    margin-right: 10px; /* Espacio entre el logo y el título */
 }
+
+header h1 {
+    margin-left: 50px; /* Remueve el margen por defecto del título */
+}
+header p {
+	margin-left: 50px; /* Remueve el margen por defecto del título */
+	align-items:baseline; /* Centra verticalmente el logo y el título dentro de este contenedor */
+}
+
 
 #content {
     display: flex;
@@ -56,11 +60,14 @@ header {
     margin: 10px;
 }
 
+#imageSection {
+    text-align: left; /* Alinea el contenido de esta sección a la izquierda */
+}
+
 #imagePreview {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: auto;
 }
 
 #bottomBar {
@@ -70,5 +77,3 @@ header {
     height: 150px;
     background-color: #6B6B6B;
 }
-
-

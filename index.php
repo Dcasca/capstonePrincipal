@@ -10,7 +10,7 @@
 	
 	<img src="esanlogo.jpg" alt="" width=auto height="80" style="margin-bottom: 50px; margin-top: 0px">
     <h1>Capstone Project - Clasificador de paltas</h1>
-	<p>Clasificador de imagenes de paltas utilizanod tensorflow para el Capstone Project</p>
+	
     <input type="file" id="imageUpload" accept="image/*">
 	<button id="predictButton">Clasificar</button>
 	<img id="imagePreview" />
@@ -22,9 +22,13 @@
 	
 <body>
     <header>
-        <img src="esanlogo.jpg" alt="Logo" id="logo">
-        <h1>Capstone Project - Clasificador de paltas</h1>
+		<div class="header-content">
+			<img src="logouniversidad.jpg" alt="Logo" id="logo">
+			<h1>Capstone Project - Clasificador de paltas</h1>
+			<p>Clasificador de imagenes de paltas utilizando tensorflow</p>
+		</div>
     </header>
+	
     
     <div id="content">
         <div id="imageSection">
