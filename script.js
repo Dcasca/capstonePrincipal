@@ -8,7 +8,7 @@
 	const classMessages = {
     'Saludable': {
         text: '<p> Muy Buen Trabajo! Tus paltas estan saludables y no tienen ninguna enfermedad! Pero no te descuides que las enfermedades pueden amenazar tus plantas en cualquier momento, para evitar ello sigue estos consejos: </p><ol>   <li>Monitoreo Regular: Inspeccione regularmente los árboles en busca de signos de enfermedades y tome medidas de inmediato si se detectan.</li>   <li>Poda y Nutrición: Realice podas regulares y asegúrese de que los árboles reciban nutrientes adecuados.</li>   <li>Riego: Mantenga un programa de riego adecuado para evitar el estrés hídrico.</li>   <li>Control de Plagas: Controle las plagas que pueden debilitar los árboles y hacerlos más susceptibles a enfermedades.</li> </ol> <div style="margin-top: 50px"></div>',
-        imageUrl: 'paltaSaludable.jpg' // Ajusta la ruta a tu imagen
+        imageUrl: 'paltaSaludable.jpg' 
     },
     'Sarna': {
         text: '<p>La Sarna o Roña del palto, es una enfermedad fúngica que afecta frutos, hojas y ramas jóvenes. Causa una reducción de la calidad comercial de la fruta.  Para combatirlo sigue estos consejos: </p><ol>  <li>Monitoreo Regular: Inspeccione regularmente los árboles en busca de signos de enfermedades y tome medidas de inmediato si se detectan.</li>  <li>Poda y Nutrición: Realice podas regulares y asegúrese de que los árboles reciban nutrientes adecuados.</li>   <li>Riego: Mantenga un programa de riego adecuado para evitar el estrés hídrico.</li>  <li>Control de Plagas: Controle las plagas que pueden debilitar los árboles y hacerlos más susceptibles a enfermedades.</li> </ol> <div style="margin-top: 50px"></div>',
@@ -72,14 +72,14 @@ document.getElementById('predictButton').addEventListener('click', async () => {
     const imageUpload = document.getElementById('imageUpload');
     const imageFile = imageUpload.files[0];
     if (imageFile) {
-        // Mostrar mensaje de progreso
+
         const progressMessage = document.getElementById('progressMessage');
         progressMessage.innerText = "Cargando...";
 
-        // Proceder con la predicción
+        
         await predictImage(imageFile);
 
-        // Una vez completada la predicción, limpiar el mensaje de progreso
+        
         progressMessage.innerText = "";
     }
 });
@@ -95,7 +95,3 @@ document.getElementById('imageUpload').addEventListener('change', (event) => {
         };
     }
 });
-
-
-	
-// JavaScript Document
