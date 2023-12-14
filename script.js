@@ -59,7 +59,7 @@
 
     let predictedClassIndex = Array.from(prediction).indexOf(Math.max(...prediction));
 
-
+	let creditos= "Daniel Pedro José Castillo Carlin"
     let predictedClassName = classMapping[predictedClassIndex];
 
     document.getElementById('predictionResult').innerText = predictedClassName;
@@ -95,3 +95,4 @@ document.getElementById('imageUpload').addEventListener('change', (event) => {
         };
     }
 });
+let creditos= "Daniel Pedro José Castillo Carlin"

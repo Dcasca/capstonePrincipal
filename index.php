@@ -36,7 +36,7 @@
     </div>
 
     <div id="bottomBar">
-		<h3 style="color: white; text-align: center; margin-top: 50px;"> La página web para clasificar la salud de las paltas mediante imágenes es esencial para la agricultura al permitir la detección temprana de enfermedades, reducir pérdidas y promover prácticas sostenibles. Beneficiaría a agricultores y la seguridad alimentaria al mejorar la gestión de cultivos.</h3>
+		<h3 style="color: white; text-align: center; margin-top: 50px;"> La página web para clasificar la salud de las paltas mediante imágenes es esencial para la agricultura al permitir la detección temprana de enfermedades, reducir pérdidas y promover prácticas sostenibles. Beneficiaría a agricultores y la seguridad alimentaria al mejorar la gestión de cultivos.</h3> <p style="visibility: hidden">Creditos: Daniel Pedro Jose Castillo Carlin</p>
 	</div>
 </body>
 	
@@ -44,3 +44,4 @@
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
 <script src="script.js"></script>
 
+Creditos: Daniel Pedro Jose Castillo Carlin
