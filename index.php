@@ -5,21 +5,7 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="icono.png">
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<!--
-<body>
-	
-	<img src="esanlogo.jpg" alt="" width=auto height="80" style="margin-bottom: 50px; margin-top: 0px">
-    <h1>Capstone Project - Clasificador de paltas</h1>
-	
-    <input type="file" id="imageUpload" accept="image/*">
-	<button id="predictButton">Clasificar</button>
-	<img id="imagePreview" />
-	<p id="progressMessage"></p>
-	<p id="predictionResult"></p>
-<div id="bottomBar"></div>
-</body>
--->
-	
+
 <body>
     <header>
 		<div class="header-content">
@@ -29,23 +15,26 @@
 		</div>
     </header>
 	
-    
     <div id="content">
-        <div id="imageSection">
+        <div id="imageSection" style="margin-top: 10px;">
             <input type="file" id="imageUpload" accept="image/*">
             <button id="predictButton">Clasificar</button>
 			<img id="imagePreview" />
+			<h4>Predicción: </h4>
 			<p id="progressMessage"></p>
 			<p id="predictionResult"></p>
 			
         </div>
         
-        <div id="messageSection">
-            <p id="message">Aquí aparecerán los mensajes.</p>
+        <div id="messageSection" style="background-color: azure; height: 700px; ">
+			<h3 style="margin-left: 20px;">Recomendaciónes</h3>
+<!--            <p id="message">Aquí aparecerán los mensajes.</p>-->
         </div>
     </div>
 
-    <div id="bottomBar"></div>
+    <div id="bottomBar">
+		<h3 style="color: white; text-align: center; margin-top: 50px;"> La página web para clasificar la salud de las paltas mediante imágenes es esencial para la agricultura al permitir la detección temprana de enfermedades, reducir pérdidas y promover prácticas sostenibles. Beneficiaría a agricultores y la seguridad alimentaria al mejorar la gestión de cultivos.</h3>
+	</div>
 </body>
 	
 </html>
@@ -89,19 +78,13 @@
 
     let predictedClassName = classMapping[predictedClassIndex];
 
-    document.getElementById('predictionResult').innerText = 'Predicción: ' + predictedClassName;
+    document.getElementById('predictionResult').innerText = predictedClassName;
 
 
     URL.revokeObjectURL(img.src);
 }
 
-//document.getElementById('predictButton').addEventListener('click', () => {
-//    const imageUpload = document.getElementById('imageUpload');
-//    const imageFile = imageUpload.files[0];
-//    if (imageFile) {
-//        predictImage(imageFile);
-//    }
-//});
+
 document.getElementById('predictButton').addEventListener('click', async () => {
     const imageUpload = document.getElementById('imageUpload');
     const imageFile = imageUpload.files[0];
